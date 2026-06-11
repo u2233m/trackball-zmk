@@ -1,0 +1,18 @@
+if SHIELD_TRACKBALL
+
+config ZMK_KEYBOARD_NAME
+    default "Trackball"
+
+config SPI
+    default y
+
+config INPUT
+    default y
+
+config ZMK_POINTING
+    default y
+
+config PAW3395
+    default y
+
+endif
