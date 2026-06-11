@@ -42,6 +42,17 @@
 };
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
     mouse_input_listener {
         compatible = "zmk,input-listener";
         device = <&pd0>;
